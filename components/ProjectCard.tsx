@@ -1,4 +1,5 @@
 import { Project } from "../data/projects";
+import Image from 'next/image';
 
 type ProjectCardProps = Partial<Project>;
 
@@ -15,14 +16,27 @@ export default function ProjectCard({
   return (
     <div className="bg-white shadow-lg rounded-xl overflow-hidden w-full sm:w-[300px] transform transition duration-300 hover:scale-105">
       {image ? (
-        <img src={image} alt={title} className="w-full h-40 object-cover" />
+        <Image 
+          src={image} 
+          alt={title || 'Image du projet'} 
+          width={300}
+          height={160}
+          className="w-full h-40 object-cover"
+        />
       ) : (
         <div className="w-full h-40 bg-gray-100 flex items-center justify-center text-gray-400">Image à ajouter</div>
       )}
 
       <div className="p-4">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-semibold">{title}</h3>
+          <div>
+            <h3 className="text-xl font-semibold">{title}</h3>
+            {category && (
+              <span className="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded-full mt-1 inline-block">
+                {category}
+              </span>
+            )}
+          </div>
           {date && <span className="text-sm text-gray-500">{date}</span>}
         </div>
 

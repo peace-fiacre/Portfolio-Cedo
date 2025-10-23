@@ -17,7 +17,7 @@ export default function Home() {
           Programmateur des Microcontrôleurs & Concepteur de systèmes automatiques et intelligents
         </h2>
         <p className="text-gray-600 mb-8 italic text-lg">
-          I'm not a genius, that's why I will work all the time.
+          I&apos;m not a genius, that&apos;s why I will work all the time.
         </p>
         <div className="inline-block">
           <a

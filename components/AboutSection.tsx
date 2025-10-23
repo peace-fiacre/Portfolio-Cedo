@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutSection() {
   return (
     <section id="about" className="mt-20">
@@ -16,9 +18,9 @@ export default function AboutSection() {
           <p className="text-gray-700 mb-4">
             <strong>Parcours professionnel :</strong><br />
             - Formation en montage des paraboles, systèmes photovoltaïques et montage des caméras de surveillance (CeFoRE SONON).<br />
-            - Stage en installation électrique bâtiment. (Nom de l'entreprise à compléter).<br />
+            - Stage en installation électrique bâtiment. (Nom de l&apos;entreprise à compléter).<br />
             - Stage en rembobinage (à compléter).<br />
-            - Stage au service de Maintenance de l'hôpital de Zone Covè.<br />
+            - Stage au service de Maintenance de l&apos;hôpital de Zone Covè.<br />
             - Stage en Maintenance Biomédicale au Centre Hospitalier Départemental ZOU.
           </p>
 
@@ -34,7 +36,14 @@ export default function AboutSection() {
         <div className="flex flex-col items-center">
           <div className="w-40 h-40 bg-gray-100 rounded-md overflow-hidden mb-4">
             {/* déposer la photo dans public/images/profile.jpg */}
-            <img src="/images/profile.jpg" alt="Photo de Cédric DJOHOZIN" className="w-full h-full object-cover" />
+            <Image 
+              src="/images/profile.jpg" 
+              alt="Photo de Cédric DJOHOZIN" 
+              width={160}
+              height={160}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
 
           <div className="text-center">
