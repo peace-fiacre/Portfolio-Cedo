@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className="sm:col-span-2">
           <p className="text-gray-700 mb-4">
             <strong>Parcours scolaire :</strong><br />
-            Certificat d'Aptitude Professionnel en Électricité — Lycée Technique et Professionnel de Porto-Novo<br />
+            Certificat d&apos;Aptitude Professionnel en Électricité — Lycée Technique et Professionnel de Porto-Novo<br />
             Baccalauréat en Électrotechnique — Lycée Technique et Professionnel de Porto-Novo<br />
             Diplôme du Technicien Industriel — Lycée Technique et Professionnel de Porto-Novo
           </p>
