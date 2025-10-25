@@ -5,20 +5,45 @@ export default function ContactSection() {
 
       <p className="text-gray-700">
         Email :{" "}
-        <a href="mailto:concepteurdemaintenance@gmail.com" className="underline text-blue-600">
+        <a href="mailto:concepteurdemaintenance@gmail.com" className="underline text-blue-600 hover:text-blue-800">
           concepteurdemaintenance@gmail.com
         </a>
       </p>
 
-      <p className="text-gray-700 mt-2">LinkedIn : <span className="text-gray-500">lien à fournir</span></p>
+      <p className="text-gray-700 mt-2">
+        LinkedIn :{" "}
+        <a 
+          href="http://www.linkedin.com/in/concepteurdemaintenance" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="underline text-blue-600 hover:text-blue-800"
+        >
+          linkedin.com/in/concepteurdemaintenance
+        </a>
+      </p>
 
-      <div className="mt-6 flex gap-4">
+      <div className="mt-6 flex flex-col sm:flex-row gap-4">
         {/* Le CV : déposer le fichier PDF dans public/CV_Cedric_DJOHOZIN.pdf */}
-        <a href="/CV_Cedric_DJOHOZIN.pdf" download className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        <a 
+          href="/CV_Cedric_DJOHOZIN.pdf" 
+          download 
+          className="block bg-blue-600 text-white font-medium px-6 py-2 rounded hover:bg-blue-700 transition-all duration-200 text-center"
+          style={{
+            color: '#ffffff',
+            backgroundColor: '#2563eb',
+          }}
+        >
           Télécharger le CV (PDF)
         </a>
 
-        <a href="mailto:concepteurdemaintenance@gmail.com" className="border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition">
+        <a 
+          href="mailto:concepteurdemaintenance@gmail.com" 
+          className="block bg-blue-600 text-white font-medium px-6 py-2 rounded hover:bg-blue-700 transition-all duration-200 text-center"
+          style={{
+            color: '#ffffff',
+            backgroundColor: '#2563eb',
+          }}
+        >
           Envoyer un e-mail
         </a>
       </div>

@@ -1,6 +1,7 @@
 export default function SkillsSection() {
   const skills = [
-    "Maintenance d’équipements biomédicaux",
+    "Maintenance d'équipements biomédicaux",
+    "Maîtrise du langage Morse",
     "Programmation des microcontrôleurs PIC 16F84A",
     "Conception des PCB",
     "Modélisation 3D (Fusion / Blender / FreeCAD)",

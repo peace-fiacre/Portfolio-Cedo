@@ -68,3 +68,23 @@ main {
 }
 
 /* Suppression du mode sombre par défaut */
+
+/* Masquer la barre de défilement tout en conservant la fonction de défilement */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animation pour les boutons de navigation */
+.nav-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.95);
+}
