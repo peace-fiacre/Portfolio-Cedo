@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="container max-w-7xl mx-auto flex justify-between items-center px-4">
         <div className="flex items-center gap-3">
           <span style={{ color: '#ffffff' }} className="font-bold text-lg">Cédric DJOHOZIN</span>
-          <span style={{ color: '#ffffff' }} className="text-sm">• Programmateur & Concepteur</span>
+          <span style={{ color: '#ffffff' }} className="text-sm">• Programmeur & Concepteur</span>
         </div>
 
         <div className="space-x-6 flex items-center">
