@@ -4,7 +4,6 @@ export default function AboutSection() {
   return (
     <section id="about" className="mt-20">
       <h2 className="text-2xl font-semibold mb-4">À propos</h2>
-
       <div className="max-w-4xl mx-auto">
         <p className="text-gray-700 mb-6">
           <strong>Parcours scolaire :</strong><br />

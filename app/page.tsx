@@ -32,7 +32,7 @@ export default function Home() {
               Cédric DJOHOZIN
             </h1>
             <h2 className="text-xl sm:text-2xl text-gray-700 mb-6">
-              Programmateur des Microcontrôleurs & Concepteur de systèmes automatiques et intelligents
+              Programmeur de Microcontrôleurs & Concepteur de systèmes automatiques et intelligents
             </h2>
             <p className="text-gray-600 mb-8 italic text-lg">
               I&apos;m not a genius, that&apos;s why I will work all the time.
@@ -46,7 +46,7 @@ export default function Home() {
                   backgroundColor: '#2563eb',
                 }}
               >
-                Voir mes projets
+                Voir mes réalisations
               </a>
             </div>
           </div>
@@ -69,7 +69,6 @@ export default function Home() {
             Découvrez mes projets réalisés
           </p>
         </div>
-        
         <ProjectsCarousel projects={projects} />
       </section>
 
