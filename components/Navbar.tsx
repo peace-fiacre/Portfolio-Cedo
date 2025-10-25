@@ -41,11 +41,11 @@ export default function Navbar() {
 
       {/* Menu déroulant mobile */}
       {menuOpen && (
-        <div className="sm:hidden bg-blue-600 text-white px-4 py-3 space-y-2 shadow-md">
-          <a href="#about" className="block py-2 px-2 rounded hover:bg-blue-700" onClick={() => setMenuOpen(false)}>À propos</a>
-          <a href="#projects" className="block py-2 px-2 rounded hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Projets</a>
-          <a href="#skills" className="block py-2 px-2 rounded hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Compétences</a>
-          <a href="#contact" className="block py-2 px-2 rounded hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Contact</a>
+        <div className="sm:hidden bg-blue-600 px-4 py-3 space-y-2 shadow-md">
+          <a href="#about" style={{ color: '#fff' }} className="block py-2 px-2 rounded hover:text-blue-100 hover:bg-blue-700" onClick={() => setMenuOpen(false)}>À propos</a>
+          <a href="#projects" style={{ color: '#fff' }} className="block py-2 px-2 rounded hover:text-blue-100 hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Projets</a>
+          <a href="#skills" style={{ color: '#fff' }} className="block py-2 px-2 rounded hover:text-blue-100 hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Compétences</a>
+          <a href="#contact" style={{ color: '#fff' }} className="block py-2 px-2 rounded hover:text-blue-100 hover:bg-blue-700" onClick={() => setMenuOpen(false)}>Contact</a>
         </div>
       )}
     </nav>
